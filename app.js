@@ -1,4 +1,6 @@
 require("dotenv").config();
+console.log(process.env.MY_SQL_HOST);
+
 const args = process.argv.slice(2);
 const net = require("net");
 const crypto = require("crypto");
@@ -10,7 +12,7 @@ const consumer = require("./consumer");
 const rsaKey = new NodeRSA();
 rsaKey.generateKeyPair();
 const publicKey = rsaKey.exportKey("public");
-const symmKey = null;
+let symmKey = null;
 
 switch (args[0]) {
   case "mq":
