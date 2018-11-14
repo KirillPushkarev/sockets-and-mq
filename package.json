@@ -1,0 +1,19 @@
+{
+  "name": "lab_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kirill Pushkarev",
+  "license": "ISC",
+  "dependencies": {
+    "@types/amqplib": "^0.5.9",
+    "amqplib": "^0.5.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^6.1.0",
+    "mysql": "^2.16.0",
+    "node-rsa": "^1.0.1"
+  }
+}
