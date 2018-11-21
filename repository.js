@@ -8,11 +8,11 @@ const mysqlConnConfig = {
 };
 const mysqlConnnection = mysql.createConnection(mysqlConnConfig);
 
-function connect(onReady) {
+function connect(onConnected) {
   mysqlConnnection.connect(function(err) {
     if (err) throw err;
     console.log("[MySQL] connected");
-    onReady();
+    onConnected();
   });
 }
 
