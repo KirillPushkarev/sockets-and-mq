@@ -1,6 +1,6 @@
 const amqp = require("amqplib/callback_api");
 
-const amqpConnection = null;
+let amqpConnection = null;
 function start(queue, processMessage) {
   amqp.connect(
     process.env.CLOUDAMQP_URL + "?heartbeat=60",
